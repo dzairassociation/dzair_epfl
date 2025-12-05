@@ -1,0 +1,335 @@
+/* =========================================================
+   GLOBAL RESET & BASE
+   ========================================================= */
+   body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   HEADER & NAVIGATION
+   ========================================================= */
+header {
+    background-color:#798974;
+    height: 60px;
+    padding:25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    padding-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav a:hover {
+    opacity: 1;
+    color: #0B4D3A;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Bouton REJOINS-NOUS */
+.btn-rejoins {
+    background-color: #0B4D3A;
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-rejoins:hover {
+    background-color: #073226;
+    color: white !important;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   SECTIONS : ACCUEIL / QUI SOMMES-NOUS / CONTACT
+   ========================================================= */
+
+#accueil,
+#quisommesnous,
+#contact {
+    color: #0B4D3A;
+    text-align: center;
+}
+
+#accueil {
+    padding: 15px 15px;
+}
+
+#quisommesnous {
+    line-height: 1.6;
+}
+
+#contact {
+    line-height: 1.6;
+}
+
+#contact a {
+    color: #0B4D3A;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.photo-accueil {
+    width: 700px;
+    max-width: 90%;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#mentions {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* =========================================================
+   PAGE ÉVÉNEMENTS — TITRES
+   ========================================================= */
+
+.page-evenements-hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.page-evenements-hero h1 {
+    color: #0B4D3A;
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+    padding: 5px 0 !important;
+}
+
+.categorie-evenements {
+    max-width: 100% !important;
+    padding: 20px 10px 0 !important; /* fusion du padding */
+    margin-top: 0 !important;
+}
+
+.categorie-evenements h2 {
+    color: #0B4D3A;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px !important;
+    margin-bottom: 45px !important;
+}
+
+
+/* =========================================================
+   PAGE ÉVÉNEMENTS — GRILLE DES CARTES
+   ========================================================= */
+
+.evenements-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 10px;
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.evenements-container h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Carte individuelle */
+.evenement {
+    background: white;
+    border-radius: 18px;
+    padding: 10px 12px 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+    text-align: center;
+    width: 260px;
+    max-width: 260px;
+}
+
+.evenement img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+/* =========================================================
+   FOOTER — STYLE TYPE EPFL
+   ========================================================= */
+
+.site-footer {
+    background-color: #61836C;
+    color: #c5c1c1;
+    text-align: center;
+    padding: 20px 20px 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+/* Logo EPFL */
+.site-footer .footer-logo {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.site-footer .footer-logo img {
+    height: 45px;
+    width: auto;
+    transition: 0.25s ease-in-out;
+}
+.site-footer .footer-logo:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.25);
+}
+
+.site-footer .footer-logo::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #d0d0d0;
+    margin: 4px auto 0;
+}
+
+/* Icônes sociaux */
+.site-footer .footer-social {
+    margin: 10px 0 6px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.site-footer .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.site-footer .social-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.site-footer .social-icon:hover img {
+    opacity: 1;
+    filter: brightness(1.1);
+}
+
+.site-footer .footer-meta {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.site-footer .separator {
+    opacity: 0.4;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+    .evenements-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .evenements-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .evenements-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
